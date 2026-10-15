@@ -19,9 +19,12 @@ header h1 {
 }
 
 nav {
-  width: 100%;
+  position: sticky;
   top: 0;
   left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flow-root;
 }
 
 li {

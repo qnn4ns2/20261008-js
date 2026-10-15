@@ -2,7 +2,21 @@
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  background: #343752;
+  background-color: #343752;
+
+  /* 細い格子状の背景 */
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.16) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.16) 1px,
+      transparent 1px
+    );
+
+  background-size: 24px 24px;
 }
 
 #wrapper {
@@ -42,9 +56,20 @@ nav li.current a {
   color: #fff;
 }
 
+nav li a:hover {
+  background: #b95c17;
+  color: #fff;
+}
+
+nav li.current a {
+  background: #a84f12;
+  color: #fff;
+}
+
 main {
   display: block;
   padding: 70px 25px 10px 275px;
+  padding-bottom: 100vh; /* Section3・4まで移動できるようにする */
   background: #fff;
 }
 
