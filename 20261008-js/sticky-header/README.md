@@ -1,1 +1,0 @@
-# jq-lesson_25_sticky-header
