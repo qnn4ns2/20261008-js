@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-color: #343752;
+
+  /* 細い格子状の背景 */
+  background-image:
+    linear-gradient(
+      rgba(255, 255, 255, 0.16) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0.16) 1px,
+      transparent 1px
+    );
+
+  background-size: 24px 24px;
+}
+
+#wrapper {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  position: fixed;
+  width: 250px;
+  background: #ecc23d;
+}
+
+header h1 {
+  padding: 70px 25px;
+  color: #de7e27;
+  font-size: 2.5em;
+  line-height: 1.1em;
+  font-weight: bold;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 1px;
+}
+
+nav li a {
+  display: block;
+  padding: 25px;
+  font-weight: bold;
+  color: #ecc23d;
+  background: #de7e27;
+  text-decoration: none;
+}
+
+nav li.current a {
+  color: #fff;
+}
+
+nav li a:hover {
+  background: #b95c17;
+  color: #fff;
+}
+
+nav li.current a {
+  background: #a84f12;
+  color: #fff;
+}
+
+main {
+  display: block;
+  padding: 70px 25px 10px 275px;
+  padding-bottom: 100vh; /* Section3・4まで移動できるようにする */
+  background: #fff;
+}
+
+section {
+  margin-bottom: 100px;
+}
+
+section h1 {
+  color: #de7e27;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+p {
+  margin-bottom: 30px;
+  line-height: 2em;
+  color: #343752;
+}
